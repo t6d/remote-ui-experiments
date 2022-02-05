@@ -4,4 +4,4 @@ import type { HostApi } from "./host";
 
 const messenger = fromInsideIframe();
 const endpoint = createEndpoint<HostApi>(messenger);
-endpoint.call.sayHello();
+endpoint.call.say("Hello from withing the iframe");
