@@ -3,6 +3,7 @@ import { createEndpoint, fromIframe } from "@remote-ui/rpc";
 
 const iframe = document.createElement("iframe");
 iframe.setAttribute("src", "/iframe.html");
+iframe.setAttribute("style", "display: none;");
 const app = document.querySelector("#app");
 app?.appendChild(iframe);
 
